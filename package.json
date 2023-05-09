@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "json-server --watch db.json --port $PORT",
+    "start": "json-server --watch db.json --port $PORT--host 0.0.0.0",
     "dev": "vite",
     "server": "json-server --watch db.json --port 5000",
     "build": "vite build",
