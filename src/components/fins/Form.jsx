@@ -14,7 +14,6 @@ export default function Form({ handleSubmit, btnText, finsData }) {
 
   useEffect(() => {
     fetch("https://json-server-larisn.vercel.app/categories", {
-      // http://localhost:5000/categories
       method: "GET",
       headers: {
         "Content-type": "application/json",
