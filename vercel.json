@@ -1,0 +1,38 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "App.jsx",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/.*",
+      "dest": "/public/db.json"
+    },
+    {
+      "handle": "filesystem",
+      "src": "/data/db.json",
+      "method": "GET",
+      "headers": {
+        "Cache-Control": "no-cache"
+      }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "env": {
+    "ENV_VAR": "VALUE"
+  },
+  "functions": {
+    "api/index.js": {
+      "memory": 128,
+      "maxDuration": 10,
+      "runtime": "@vercel/node"
+    }
+  },
+  "start": "json-server --watch data/db.json --port $PORT"
+}
