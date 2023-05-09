@@ -138,20 +138,20 @@ export default function Fins() {
     finsUpdated.priorities = prioritiesUpdated
     finsUpdated.cost = parseFloat(finsUpdated.cost) - parseFloat(cost)
 
-    fetch(`http://localhost:5000/fins/${finsUpdated.id}`, {
+    fetch(`https://json-server-larisn.vercel.app/fins/${finsUpdated.id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",
       },
       body: JSON.stringify(finsUpdated),
     })
-    .then((resp) => resp.json())
-    .then(() => {
-      setFins(finsUpdated)
-      setPriority(prioritiesUpdated)
-      setMessage("Prioridade removida com sucesso!")
-    })
-    .catch((err) => console.log(err))
+      .then((resp) => resp.json())
+      .then(() => {
+        setFins(finsUpdated);
+        setPriority(prioritiesUpdated);
+        setMessage("Prioridade removida com sucesso!");
+      })
+      .catch((err) => console.log(err));
   }
 
   return (

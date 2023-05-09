@@ -13,14 +13,16 @@ export default function Form({ handleSubmit, btnText, finsData }) {
   const [fins, setFins] = useState(finsData || {})
 
   useEffect(() => {
-    fetch("http://localhost:5000/categories", {
+    fetch("https://json-server-larisn.vercel.app/categories", {
+      // http://localhost:5000/categories
       method: "GET",
       headers: {
         "Content-type": "application/json",
       },
     })
       .then((resp) => resp.json()) // transforma dados da resposta em json
-      .then((data) => { // dados do json no hook
+      .then((data) => {
+        // dados do json no hook
         setCategories(data);
       })
       .catch((err) => console.log(err));
