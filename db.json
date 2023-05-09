@@ -1,0 +1,60 @@
+{
+  "fins": [
+    {
+      "name": "54",
+      "value": "324431",
+      "category": {
+        "id": "5",
+        "name": "Transporte"
+      },
+      "cost": 0,
+      "priorities": [],
+      "id": 3
+    },
+    {
+      "name": "3",
+      "value": "3",
+      "category": {
+        "id": "7",
+        "name": "Lazer"
+      },
+      "cost": 0,
+      "priorities": [],
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Educação"
+    },
+    {
+      "id": 2,
+      "name": "Doméstica"
+    },
+    {
+      "id": 3,
+      "name": "Médica"
+    },
+    {
+      "id": 4,
+      "name": "Pessoal"
+    },
+    {
+      "id": 5,
+      "name": "Transporte"
+    },
+    {
+      "id": 6,
+      "name": "Investimento"
+    },
+    {
+      "id": 7,
+      "name": "Lazer"
+    },
+    {
+      "id": 8,
+      "name": "Alimentação"
+    }
+  ]
+}
