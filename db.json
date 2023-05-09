@@ -1,17 +1,6 @@
 {
   "fins": [
     {
-      "name": "54",
-      "value": "324431",
-      "category": {
-        "id": "5",
-        "name": "Transporte"
-      },
-      "cost": 0,
-      "priorities": [],
-      "id": 3
-    },
-    {
       "name": "3",
       "value": "3",
       "category": {
