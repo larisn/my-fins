@@ -13,7 +13,7 @@ export default function Form({ handleSubmit, btnText, finsData }) {
   const [fins, setFins] = useState(finsData || {})
 
   useEffect(() => {
-    fetch("http://localhost:5000/categories", {
+    fetch("https://json-server-khaki-sigma.vercel.app/categories", {
       method: "GET",
       headers: {
         "Content-type": "application/json",
