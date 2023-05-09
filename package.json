@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "json-server --watch db.json --port $PORT--host 0.0.0.0",
+    "start": "node main.jsx",
     "dev": "vite",
     "server": "json-server --watch db.json --port 5000",
     "build": "vite build",
@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "json-server": "^0.17.3",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
