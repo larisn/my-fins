@@ -21,6 +21,17 @@
       "cost": 0,
       "priorities": [],
       "id": 3
+    },
+    {
+      "name": "oi",
+      "value": "5",
+      "category": {
+        "id": "6",
+        "name": "Investimento"
+      },
+      "cost": 0,
+      "priorities": [],
+      "id": 4
     }
   ],
   "categories": [

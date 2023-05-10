@@ -55,5 +55,5 @@ export default function PriorityForm({ handleSubmit, btnText, finsData }) {
 PriorityForm.propTypes = {
   handleSubmit: PropTypes.func.isRequired,
   btnText: PropTypes.string.isRequired,
-  finsData: PropTypes.string.isRequired
+  finsData: PropTypes.string
 };
