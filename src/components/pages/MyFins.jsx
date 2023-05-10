@@ -31,6 +31,7 @@ export default function Fins() {
       // simular um carregamento mais demorado para o loading aparecer
       fetch("https://my-fins.vercel.app/fins", {
         method: "GET",
+        mode: "cors",
         headers: {
           "Content-type": "application/json",
         },
@@ -48,6 +49,7 @@ export default function Fins() {
   function removeFins(id) { // excluir despesa
     fetch(`https://my-fins.vercel.app/fins/${id}`, {
       method: "DELETE",
+      mode: "cors",
       headers: {
         "Content-type": "application/json",
       },

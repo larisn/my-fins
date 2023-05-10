@@ -4,14 +4,15 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "json-server --watch db.json --port $PORT",
-    "server": "json-server --watch db.json --port 5000",
+    "start": "json-server --watch ./db.json --port $PORT --middlewares cors",
+    "server": "json-server --watch ./db.json --port 5000",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "cors": "^2.8.5",
     "json-server": "^0.17.3",
     "node-sass": "^8.0.0",
     "react": "^18.2.0",

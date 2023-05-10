@@ -14,6 +14,7 @@ export default function Form({ handleSubmit, btnText, finsData }) {
   useEffect(() => {
     fetch("https://my-fins.vercel.app/categories", {
       method: "GET",
+      mode: "cors",
       headers: {
         "Content-type": "application/json",
       },

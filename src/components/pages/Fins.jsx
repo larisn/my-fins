@@ -33,6 +33,7 @@ export default function Fins() {
       // simular um carregamento mais demorado para o loading aparecer
       fetch(`https://my-fins.vercel.app/fins/${id}`, {
         method: "GET",
+        mode: "cors",
         headers: {
           "Content-type": "application/json",
         },
@@ -82,6 +83,7 @@ export default function Fins() {
     // update priority
     fetch(`https://my-fins.vercel.app/fins/${fins.id}`, {
       method: "PATCH",
+      mode: "cors",
       headers: {
         "Content-type": "application/json",
       },
@@ -107,6 +109,7 @@ export default function Fins() {
 
     fetch(`https://my-fins.vercel.app/fins/${fins.id}`, {
       method: "PATCH",
+      mode: "cors",
       headers: {
         "Content-type": "application/json",
       },
@@ -136,6 +139,7 @@ export default function Fins() {
 
     fetch(`https://my-fins.vercel.app/fins/${finsUpdated.id}`, {
       method: "PATCH",
+      mode: "cors",
       headers: {
         "Content-type": "application/json",
       },

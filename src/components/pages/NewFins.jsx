@@ -18,6 +18,7 @@ export default function NewFins() {
 
     fetch("https://my-fins.vercel.app/fins", {
       method: "POST",
+      mode: "cors",
       headers: {
         "Content-type": "application/json",
       },
