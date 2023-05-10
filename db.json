@@ -1,17 +1,6 @@
 {
   "fins": [
     {
-      "name": "4",
-      "value": "4",
-      "category": {
-        "id": "5",
-        "name": "Transporte"
-      },
-      "cost": 0,
-      "priorities": [],
-      "id": 1
-    },
-    {
       "name": "43",
       "value": "4",
       "category": {
@@ -21,6 +10,17 @@
       "cost": 0,
       "priorities": [],
       "id": 2
+    },
+    {
+      "name": "4",
+      "value": "4",
+      "category": {
+        "id": "8",
+        "name": "Alimentação"
+      },
+      "cost": 0,
+      "priorities": [],
+      "id": 3
     }
   ],
   "categories": [

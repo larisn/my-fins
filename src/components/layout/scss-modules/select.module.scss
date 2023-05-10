@@ -12,7 +12,7 @@
   }
   label {
     margin-bottom: 1rem;
-    margin-top: .5rem;
+    margin-top: 2.2rem;
     font-weight: 700;
     font-size: 1.8rem;
     color: $second-main-color;
@@ -21,15 +21,15 @@
     }
     @include responsive-tablet {
       font-size: 3rem;
-      margin-top: 3rem;
+      margin-top: 4.2rem;
     }
     @include responsive-desktop {
       font-size: 2rem;
-      margin-top: 2rem;
+      margin-top: 2.5rem;
     }
     @include responsive-desktop2 {
       font-size: 2.3rem;
-      margin-top: 2rem;
+      margin-top: 4rem;
     }
   }
   select {
