@@ -20,6 +20,9 @@ export default function Home() {
               <h2>Controle suas finanças de forma</h2>
               <span>simples e rápida!</span>
             </div>
+          </Fade>
+
+          <Fade top duration={1600} delay={200}>
             <div className={styles.buttonHome}>
               <Button to="/newfins" text="Começar" />
             </div>
