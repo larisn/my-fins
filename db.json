@@ -21,6 +21,17 @@
       "cost": 0,
       "priorities": [],
       "id": 5
+    },
+    {
+      "name": "3",
+      "value": "3",
+      "category": {
+        "id": "7",
+        "name": "Lazer"
+      },
+      "cost": 0,
+      "priorities": [],
+      "id": 6
     }
   ],
   "categories": [
