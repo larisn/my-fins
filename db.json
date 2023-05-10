@@ -1,28 +1,6 @@
 {
   "fins": [
     {
-      "name": "43",
-      "value": "4",
-      "category": {
-        "id": "7",
-        "name": "Lazer"
-      },
-      "cost": 0,
-      "priorities": [],
-      "id": 2
-    },
-    {
-      "name": "4",
-      "value": "4",
-      "category": {
-        "id": "8",
-        "name": "Alimentação"
-      },
-      "cost": 0,
-      "priorities": [],
-      "id": 3
-    },
-    {
       "name": "oi",
       "value": "5",
       "category": {
@@ -32,6 +10,17 @@
       "cost": 0,
       "priorities": [],
       "id": 4
+    },
+    {
+      "category": {
+        "id": "7",
+        "name": "Lazer"
+      },
+      "name": "u",
+      "value": "7",
+      "cost": 0,
+      "priorities": [],
+      "id": 5
     }
   ],
   "categories": [
