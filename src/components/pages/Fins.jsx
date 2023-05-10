@@ -81,18 +81,18 @@ export default function Fins() {
     fins.cost = newValue
 
     // update priority
-    fetch(`http://localhost:5000/fins/${fins.id}`, {
+    fetch(`https://json-server-larisn.vercel.app/fins/${fins.id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",
       },
-      body: JSON.stringify(fins)
+      body: JSON.stringify(fins),
     })
-    .then((resp) => resp.json())
-    .then(() => {
-      setShowPriorityForm(false);
-    })
-    .catch ((err) => console.log(err))
+      .then((resp) => resp.json())
+      .then(() => {
+        setShowPriorityForm(false);
+      })
+      .catch((err) => console.log(err));
   }
 
   function editFins(fins) {
