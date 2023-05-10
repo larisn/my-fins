@@ -3,7 +3,7 @@ import styles from "../layout/scss-modules/home.module.scss";
 import tree from "../../assets/img/tree.svg";
 import womanHome from "../../assets/img/woman-home.svg";
 import Button from '../layout/Button';
-import Fade from "react-reveal/Fade";
+
 
 export default function Home() {
   return (
@@ -12,21 +12,18 @@ export default function Home() {
         <img src={womanHome} className={styles.womanHome} />
         <div>
           <img src={tree} className={styles.tree} />
-          <Fade top duration={1300}>
-            <h1>
-              Bem-vindo ao my fins<span>.</span>
-            </h1>
-            <div>
-              <h2>Controle suas finanças de forma</h2>
-              <span>simples e rápida!</span>
-            </div>
-          </Fade>
+          <h1>
+            Bem-vindo ao my fins<span>.</span>
+          </h1>
 
-          <Fade top duration={1600} delay={200}>
-            <div className={styles.buttonHome}>
-              <Button to="/newfins" text="Começar" />
-            </div>
-          </Fade>
+          <div>
+            <h2>Controle suas finanças de forma</h2>
+            <span>simples e rápida!</span>
+          </div>
+
+          <div className={styles.buttonHome}>
+            <Button to="/newfins" text="Começar" />
+          </div>
         </div>
       </div>
     </section>

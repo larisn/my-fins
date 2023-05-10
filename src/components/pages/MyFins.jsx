@@ -1,7 +1,6 @@
 
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import Fade from "react-reveal/Fade";
 
 import Message from "../layout/Message";
 import Button from "../layout/Button";
@@ -77,29 +76,25 @@ export default function Fins() {
       <img src={tree2} className={styles.tree2} />
       <img src={plant} className={styles.plant} />
       <div>
-        <Fade top duration={1800} delay={850}>
-          <div className={styles.containerTitle}>
-            <h1>Minhas despesas</h1>
-            <Button to="/newfins" text="Criar Despesa" />
-          </div>
-        </Fade>
+        <div className={styles.containerTitle}>
+          <h1>Minhas despesas</h1>
+          <Button to="/newfins" text="Criar Despesa" />
+        </div>
       </div>
 
       
       <div className={style.containerFins}>
-        <Fade bottom duration={1600} delay={400}>
-          {fins.length > 0 &&
-            fins.map((fin) => (
-              <FinsCard
-                key={fin.id}
-                name={fin.name}
-                id={fin.id}
-                value={fin.value}
-                category={fin?.category?.name}
-                handleRemove={removeFins}
-              />
-            ))}
-        </Fade>
+        {fins.length > 0 &&
+          fins.map((fin) => (
+            <FinsCard
+              key={fin.id}
+              name={fin.name}
+              id={fin.id}
+              value={fin.value}
+              category={fin?.category?.name}
+              handleRemove={removeFins}
+            />
+          ))}
 
         {/* remover o loading */}
         {!removeLoading && <Loading />}

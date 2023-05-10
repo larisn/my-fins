@@ -1,7 +1,6 @@
 
 import PropTypes from "prop-types";
 import { useState } from "react";
-import Fade from "react-reveal/Fade";
 import Input from "../form/Input";
 import SubmitButton from '../form/SubmitButton'
 
@@ -12,6 +11,7 @@ export default function PriorityForm({ handleSubmit, btnText, finsData }) {
   function submit(e) {
     // manipular os dados da despesa adicionando prioridades
     e.preventDefault()
+
     finsData.priorities.push(priority)
     handleSubmit(finsData)
   }
@@ -23,45 +23,37 @@ export default function PriorityForm({ handleSubmit, btnText, finsData }) {
 
   return (
     <form autoComplete="off" onSubmit={submit}>
-      <Fade left duration={1500} delay={200}>
-        <Input
-          type="text"
-          text="Nome da prioridade"
-          name="name"
-          placeholder="Insira o nome da prioridade"
-          handleOnChange={handleChange}
-        />
-      </Fade>
+      <Input
+        type="text"
+        text="Nome da prioridade"
+        name="name"
+        placeholder="Insira o nome da prioridade"
+        handleOnChange={handleChange}
+      />
 
-      <Fade left duration={1500} delay={300}>
-        <Input
-          type="number"
-          text="Valor da prioridade"
-          name="cost"
-          placeholder="Insira o valor total da sua prioridade"
-          handleOnChange={handleChange}
-        />
-      </Fade>
+      <Input
+        type="number"
+        text="Valor da prioridade"
+        name="cost"
+        placeholder="Insira o valor total da sua prioridade"
+        handleOnChange={handleChange}
+      />
 
-      <Fade left duration={1500} delay={400}>
-        <Input
-          type="text"
-          text="Descrição da prioridade"
-          name="description"
-          placeholder="Descreva sua prioridade"
-          handleOnChange={handleChange}
-        />
-      </Fade>
-
-      <Fade left duration={1500} delay={500}>
-        <SubmitButton text={btnText} />
-      </Fade>
+      <Input
+        type="text"
+        text="Descrição da prioridade"
+        name="description"
+        placeholder="Descreva sua prioridade"
+        handleOnChange={handleChange}
+      />
+      
+      <SubmitButton text={btnText} />
     </form>
   );
 }
 
 PriorityForm.propTypes = {
-  handleSubmit: PropTypes.func,
-  btnText: PropTypes.string,
-  finsData: PropTypes.string
-}
+  handleSubmit: PropTypes.func.isRequired,
+  btnText: PropTypes.string.isRequired,
+  finsData: PropTypes.string.isRequired
+};

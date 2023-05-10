@@ -1,15 +1,26 @@
 {
   "fins": [
     {
-      "name": "3",
-      "value": "3",
+      "name": "4",
+      "value": "4",
+      "category": {
+        "id": "5",
+        "name": "Transporte"
+      },
+      "cost": 0,
+      "priorities": [],
+      "id": 1
+    },
+    {
+      "name": "43",
+      "value": "4",
       "category": {
         "id": "7",
         "name": "Lazer"
       },
       "cost": 0,
       "priorities": [],
-      "id": 4
+      "id": 2
     }
   ],
   "categories": [

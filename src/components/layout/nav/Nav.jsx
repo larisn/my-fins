@@ -1,7 +1,6 @@
 
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Fade from "react-reveal/Fade";
 
 import styles from "../scss-modules/nav.module.scss";
 import Container from "../Container";
@@ -18,33 +17,31 @@ export default function Nav() {
   }
 
   return (
-    <Fade top delay={550}>
-      <nav className={styles.nav}>
-        <Container>
-          <div className={styles.containerNav}>
-            <Link to="/">
-              <img src={brand} alt="myfins." />
-            </Link>
-            <ul className={styles.list}>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/newfins">Criar lista</Link>
-              </li>
-              <li>
-                <Link to="/myfins">Despesas</Link>
-              </li>
-              <li>
-                <Link>Ajuda</Link>
-              </li>
-            </ul>
-            <NavIcon isOpen={isOpen} toggleMode={toggleMode} />
-          </div>
-          <NavItems isOpen={isOpen} toggleMode={toggleMode} />
-        </Container>
-      </nav>
-    </Fade>
+    <nav className={styles.nav}>
+      <Container>
+        <div className={styles.containerNav}>
+          <Link to="/">
+            <img src={brand} alt="myfins." />
+          </Link>
+          <ul className={styles.list}>
+            <li>
+              <Link to="/">Home</Link>
+            </li>
+            <li>
+              <Link to="/newfins">Criar lista</Link>
+            </li>
+            <li>
+              <Link to="/myfins">Despesas</Link>
+            </li>
+            <li>
+              <Link>Ajuda</Link>
+            </li>
+          </ul>
+          <NavIcon isOpen={isOpen} toggleMode={toggleMode} />
+        </div>
+        <NavItems isOpen={isOpen} toggleMode={toggleMode} />
+      </Container>
+    </nav>
   );
 }
 

@@ -3,13 +3,7 @@ import PropTypes from "prop-types";
 import styles from "../layout/scss-modules/select.module.scss";
 
 
-export default function Select({
-  text,
-  name,
-  options,
-  handleOnChange,
-  value,
-}) {
+export default function Select({ text, name, options, handleOnChange, value, }) {
 
   return (
     <div className={styles.formContainer}>

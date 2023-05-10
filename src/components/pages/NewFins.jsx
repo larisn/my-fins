@@ -1,7 +1,6 @@
 
-import {useNavigate} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Form from "../fins/Form";
-import Fade from "react-reveal/Fade";
 
 import styles from "../layout/scss-modules/newfins.module.scss";
 import style from "../layout/scss-modules/form.module.scss";
@@ -38,11 +37,9 @@ export default function NewFins() {
         <img src={womanfins} className={styles.womanfins} />
         <div>
           <img src={tree2} className={styles.tree2} />
-          <Fade top>
-            <h1>Listar minhas despesas</h1>
-            <h2>Crie sua lista de despesas para</h2>
-            <h2>facilitar sua organização.</h2>
-          </Fade>
+          <h1>Listar minhas despesas</h1>
+          <h2>Crie sua lista de despesas para</h2>
+          <h2>facilitar sua organização.</h2>
 
           <div className={style.form}>
             <Form handleSubmit={createPost} btnText="Criar Despesa" />

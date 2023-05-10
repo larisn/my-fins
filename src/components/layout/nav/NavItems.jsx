@@ -1,6 +1,6 @@
 
 import PropTypes from "prop-types";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 import styles from "../scss-modules/nav.module.scss";
 
 export default function NavItems({isOpen, toggleMode}) {

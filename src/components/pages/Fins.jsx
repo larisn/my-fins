@@ -2,7 +2,6 @@
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { v4 as uuidv4 } from "uuid";
-import Fade from "react-reveal/Fade";
 
 import Form from "../fins/Form";
 import Message from "../layout/Message";
@@ -158,34 +157,30 @@ export default function Fins() {
           {message && <Message type={type} msg={message} />}
           <img src={tree} className={styles.tree} />
           <img src={plant} className={styles.plant} />
-          <Fade top duration={1700} delay={300}>
-            <div className={styles.containerTitle1}>
-              <h1>Despesa: {fins.name}</h1>
-              <button onClick={toggleFinsForm}>
-                {/* trocar o nome do botão de acordo com o click do usuário */}
-                {!showFinsForm ? "Editar" : "Fechar"}
-              </button>
-            </div>
-          </Fade>
+          <div className={styles.containerTitle1}>
+            <h1>Despesa: {fins.name}</h1>
+            <button onClick={toggleFinsForm}>
+              {/* trocar o nome do botão de acordo com o click do usuário */}
+              {!showFinsForm ? "Editar" : "Fechar"}
+            </button>
+          </div>
 
           {!showFinsForm ? (
             // detalhes da despesa
-            <Fade top duration={1700} delay={500}>
-              <div className={styles.containerDetails}>
-                <p>
-                  <span>Categoria:</span>
-                  <span>{fins?.category?.name}</span>
-                </p>
-                <p>
-                  <span>Valor total:</span>
-                  <span>R$ {fins.value}</span>
-                </p>
-                <p>
-                  <span>Total utilizado:</span>
-                  <span>R$ {fins.cost}</span>
-                </p>
-              </div>
-            </Fade>
+            <div className={styles.containerDetails}>
+              <p>
+                <span>Categoria:</span>
+                <span>{fins?.category?.name}</span>
+              </p>
+              <p>
+                <span>Valor total:</span>
+                <span>R$ {fins.value}</span>
+              </p>
+              <p>
+                <span>Total utilizado:</span>
+                <span>R$ {fins.cost}</span>
+              </p>
+            </div>
           ) : (
             // formulário de edição
             <div className={styles.finsInfo}>
@@ -197,14 +192,13 @@ export default function Fins() {
             </div>
           )}
           <div className={styles.details}>
-            <Fade top duration={1900} delay={700}>
-              <div className={styles.containerTitle}>
-                <h1>Adicionar uma prioridade:</h1>
-                <button onClick={togglePriorityForm}>
-                  {!showPriorityForm ? "Adicionar" : "Fechar"}
-                </button>
-              </div>
-            </Fade>
+            <div className={styles.containerTitle}>
+              <h1>Adicionar uma prioridade:</h1>
+              <button onClick={togglePriorityForm}>
+                {!showPriorityForm ? "Adicionar" : "Fechar"}
+              </button>
+            </div>
+
 
             <div className={styles.containerPriorityForm}>
               {showPriorityForm && (
@@ -217,31 +211,27 @@ export default function Fins() {
             </div>
 
             <div className={styles.containerFinsPriority}>
-              <Fade top duration={1900} delay={1050}>
-                <div className={styles.containerTitle}>
-                  <h1>Minhas prioridades: </h1>
-                </div>
-              </Fade>
+              <div className={styles.containerTitle}>
+                <h1>Minhas prioridades: </h1>
+              </div>
 
-              <Fade bottom duration={1600} delay={350}>
-                <div className={styles.contentFinsPriority}>
-                  {priority.length > 0 &&
-                    // para exibir as prioridades no projeto
-                    priority.map((priorities) => (
-                      <PriorityCard
-                        id={priorities.id}
-                        name={priorities.name}
-                        cost={priorities.cost}
-                        description={priorities.description}
-                        key={priorities.id}
-                        handleRemove={removePriority}
-                      />
-                    ))}
-                  {priority.length === 0 && (
-                    <p>Não há prioridades cadastradas.</p>
-                  )}
-                </div>
-              </Fade>
+              <div className={styles.contentFinsPriority}>
+                {priority.length > 0 &&
+                  // para exibir as prioridades no projeto
+                  priority.map((priorities) => (
+                    <PriorityCard
+                      id={priorities.id}
+                      name={priorities.name}
+                      cost={priorities.cost}
+                      description={priorities.description}
+                      key={priorities.id}
+                      handleRemove={removePriority}
+                    />
+                  ))}
+                {priority.length === 0 && (
+                  <p>Não há prioridades cadastradas.</p>
+                )}
+              </div>
             </div>
           </div>
         </div>
