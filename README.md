@@ -5,7 +5,7 @@
 <br>
 
 <h3 align="center">
-💵 Preview - Desktop
+💸 Preview - Desktop
 </h3>
 
 ![Preview](https://github.com/larisn/my-fins/blob/main/src/assets/img/preview-desktop.png)
@@ -13,7 +13,7 @@
 <br>
 
 <h3 align="center">
-💵 Preview - Mobile e Tablet
+💸 Preview - Mobile e Tablet
 </h3>
 <br>
 
@@ -21,7 +21,7 @@
 <br>
 <br>
 
-## 💸 Sobre
+## 💲 Sobre
 
 > Trata-se de um site que possui as ferramentas necessárias para gerenciar suas despesas de forma fácil e eficiente. Foi desenvolvido com ReactJS e também com o JSON Server, que é uma biblioteca que permite a criação de uma API REST simulada utilizando um arquivo JSON como uma fonte de dados, ou seja, um "fake backend". <br>
 O projeto conta com algumas funcionalidades, como menu hambúrguer, fazer o CRUD (Criação, Edição, Atualização e Exclusão) das suas despesas e também está 100% responsivo. <br>
