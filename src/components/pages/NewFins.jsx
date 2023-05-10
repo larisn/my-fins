@@ -17,7 +17,7 @@ export default function NewFins() {
     fins.cost = 0
     fins.priorities = []
 
-    fetch("https://my-fins-4h2zrn8hn-larisn.vercel.app/fins", {
+    fetch("http://localhost:5000/fins", {
       method: "POST",
       headers: {
         "Content-type": "application/json",
