@@ -2,7 +2,7 @@
   "name": "my-fins",
   "private": true,
   "version": "0.0.0",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "server": "json-server --watch db.json --port 5000",
