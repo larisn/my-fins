@@ -36,7 +36,7 @@ export default function Select({
 Select.propTypes = {
   text: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  options: PropTypes.string.isRequired,
+  options: PropTypes.array.isRequired,
   value: PropTypes.string.isRequired,
   handleOnChange: PropTypes.func.isRequired
 }
