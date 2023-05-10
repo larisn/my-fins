@@ -32,7 +32,7 @@ export default function Fins() {
   useEffect(() => {
     setTimeout(() => {
       // simular um carregamento mais demorado para o loading aparecer
-      fetch(`http://localhost:5000/fins/${id}`, {
+      fetch(`https://json-server-larisn.vercel.app/fins/${id}`, {
         method: "GET",
         headers: {
           "Content-type": "application/json",
@@ -40,10 +40,10 @@ export default function Fins() {
       })
         .then((resp) => resp.json())
         .then((data) => {
-          setFins(data)
-          setPriority(data.priorities)
+          setFins(data);
+          setPriority(data.priorities);
         })
-        .catch((err) => console.log(err))
+        .catch((err) => console.log(err));
     }, 400)
   }, [id])
 
@@ -109,23 +109,23 @@ export default function Fins() {
     //   fins.classList.remove("form-error");
     // }
 
-    fetch(`http://localhost:5000/fins/${fins.id}`, {
+    fetch(`https://json-server-larisn.vercel.app/fins/${fins.id}`, {
       method: "PATCH",
       headers: {
         "Content-type": "application/json",
       },
-        body: JSON.stringify(fins),
+      body: JSON.stringify(fins),
     })
-    .then((resp) => resp.json())
-    .then((data) => {
-    // alterar a despesa daqui pela despesa do banco atualizada
-      setFins(data);
-    // esconder o form quando terminar a edição
-      setShowFinsForm(false)
-      setMessage("Despesa atualizada.")
-      setType("success")
-    })
-    .catch((err) => console.log(err))
+      .then((resp) => resp.json())
+      .then((data) => {
+        // alterar a despesa daqui pela despesa do banco atualizada
+        setFins(data);
+        // esconder o form quando terminar a edição
+        setShowFinsForm(false);
+        setMessage("Despesa atualizada.");
+        setType("success");
+      })
+      .catch((err) => console.log(err));
   }
   
   function removePriority(id, cost) {
