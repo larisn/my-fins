@@ -5,7 +5,7 @@
 <br>
 
 <h3 align="center">
-💲 Preview - Desktop
+💵 Preview - Desktop
 </h3>
 
 ![Preview](https://github.com/larisn/my-fins/blob/main/src/assets/img/preview-desktop.png)
@@ -13,7 +13,7 @@
 <br>
 
 <h3 align="center">
-💲 Preview - Mobile e Tablet
+💵 Preview - Mobile e Tablet
 </h3>
 <br>
 
