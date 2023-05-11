@@ -12,7 +12,7 @@ export default function Form({ handleSubmit, btnText, finsData }) {
   const [fins, setFins] = useState(finsData || {})
 
   useEffect(() => {
-    fetch("https://my-fins.vercel.app/categories", {
+    fetch("https://json-server-khaki-sigma.vercel.app/categories", {
       method: "GET",
       mode: "cors",
       headers: {
