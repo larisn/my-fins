@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "json-server --watch ./db.json --port $PORT --middlewares cors",
     "server": "json-server --watch ./db.json --port 5000",
     "dev": "vite",
     "build": "vite build",
