@@ -29,7 +29,7 @@ Também utilizei algumas outras tecnologias como: Sass, React Reveal,  uuidv4 e 
 <br>
 
 
-## 🪙 Seções
+## 💵 Seções
 O site é possui por cinco partes:
 
 - **Home:** É a página principal do site.
