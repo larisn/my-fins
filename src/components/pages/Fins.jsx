@@ -33,7 +33,6 @@ export default function Fins() {
       // simular um carregamento mais demorado para o loading aparecer
       fetch(`http://localhost:5000/fins/${id}`, {
         method: "GET",
-        mode: "cors",
         headers: {
           "Content-type": "application/json",
         },
@@ -83,7 +82,6 @@ export default function Fins() {
     // update priority
     fetch(`http://localhost:5000/fins/${fins.id}`, {
       method: "PATCH",
-      mode: "cors",
       headers: {
         "Content-type": "application/json",
       },
@@ -109,7 +107,6 @@ export default function Fins() {
 
     fetch(`http://localhost:5000/fins/${fins.id}`, {
       method: "PATCH",
-      mode: "cors",
       headers: {
         "Content-type": "application/json",
       },
@@ -139,7 +136,6 @@ export default function Fins() {
 
     fetch(`http://localhost:5000/fins/${finsUpdated.id}`, {
       method: "PATCH",
-      mode: "cors",
       headers: {
         "Content-type": "application/json",
       },

@@ -31,7 +31,6 @@ export default function Fins() {
       // simular um carregamento mais demorado para o loading aparecer
       fetch("http://localhost:5000/fins", {
         method: "GET",
-        mode: "cors",
         headers: {
           "Content-type": "application/json",
         },
@@ -49,7 +48,6 @@ export default function Fins() {
   function removeFins(id) { // excluir despesa
     fetch(`http://localhost:5000/fins/${id}`, {
       method: "DELETE",
-      mode: "cors",
       headers: {
         "Content-type": "application/json",
       },

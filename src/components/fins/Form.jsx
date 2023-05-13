@@ -14,7 +14,6 @@ export default function Form({ handleSubmit, btnText, finsData }) {
   useEffect(() => {
     fetch("http://localhost:5000/categories", {
       method: "GET",
-      mode: "cors",
       headers: {
         "Content-type": "application/json",
       },

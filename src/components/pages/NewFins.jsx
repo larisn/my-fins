@@ -18,7 +18,6 @@ export default function NewFins() {
 
     fetch("http://localhost:5000/fins", {
       method: "POST",
-      mode: "cors",
       headers: {
         "Content-type": "application/json",
       },
