@@ -29,7 +29,7 @@ export default function Fins() {
   useEffect(() => { // adicionar um loading
     setTimeout(() => {
       // simular um carregamento mais demorado para o loading aparecer
-      fetch("https://json-server-khaki-sigma.vercel.app/fins", {
+      fetch("https://localhost:5000/fins", {
         method: "GET",
         mode: "cors",
         headers: {
@@ -47,7 +47,7 @@ export default function Fins() {
   }, [])
 
   function removeFins(id) { // excluir despesa
-    fetch(`https://json-server-khaki-sigma.vercel.app/fins/${id}`, {
+    fetch(`https://localhost:5000/fins/${id}`, {
       method: "DELETE",
       mode: "cors",
       headers: {

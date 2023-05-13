@@ -16,7 +16,7 @@ export default function NewFins() {
     fins.cost = 0
     fins.priorities = []
 
-    fetch("https://json-server-khaki-sigma.vercel.app/fins", {
+    fetch("https://localhost:5000/fins", {
       method: "POST",
       mode: "cors",
       headers: {
