@@ -31,7 +31,7 @@ export default function Fins() {
   useEffect(() => {
     setTimeout(() => {
       // simular um carregamento mais demorado para o loading aparecer
-      fetch(`https://localhost:5000/fins/${id}`, {
+      fetch(`http://localhost:5000/fins/${id}`, {
         method: "GET",
         mode: "cors",
         headers: {
@@ -81,7 +81,7 @@ export default function Fins() {
     fins.cost = newValue
 
     // update priority
-    fetch(`https://localhost:5000/fins/${fins.id}`, {
+    fetch(`http://localhost:5000/fins/${fins.id}`, {
       method: "PATCH",
       mode: "cors",
       headers: {
@@ -107,7 +107,7 @@ export default function Fins() {
       return false
     }
 
-    fetch(`https://localhost:5000/fins/${fins.id}`, {
+    fetch(`http://localhost:5000/fins/${fins.id}`, {
       method: "PATCH",
       mode: "cors",
       headers: {
@@ -137,7 +137,7 @@ export default function Fins() {
     finsUpdated.priorities = prioritiesUpdated
     finsUpdated.cost = parseFloat(finsUpdated.cost) - parseFloat(cost)
 
-    fetch(`https://localhost:5000/fins/${finsUpdated.id}`, {
+    fetch(`http://localhost:5000/fins/${finsUpdated.id}`, {
       method: "PATCH",
       mode: "cors",
       headers: {
