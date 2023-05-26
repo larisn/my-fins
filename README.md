@@ -30,7 +30,7 @@ Também utilizei algumas outras tecnologias como: Sass, React Reveal,  uuidv4 e 
 
 
 ## 💵 Seções
-O site é possui por cinco partes:
+O site é possui cinco partes:
 
 - **Home:** É a página principal do site.
 - **Criar lista:** É uma página com formulários para a criação da despesa.
